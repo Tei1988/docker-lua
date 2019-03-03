@@ -1,4 +1,4 @@
-FROM tei1988/luarocks:3.0.4-alpine3.8 AS luacheck
+FROM tei1988/luarocks:3.0.4-alpine3.9 AS luacheck
 
 ARG LUACHECK_VERSION=0.23.0
 
@@ -8,7 +8,7 @@ RUN apk --no-cache add \
       lua5.2-dev
 RUN luarocks install luacheck
 
-FROM tei1988/luarocks:3.0.4-alpine3.8
+FROM tei1988/luarocks:3.0.4-alpine3.9
 
 ENV LUACHECK_VERSION 0.23.0
 

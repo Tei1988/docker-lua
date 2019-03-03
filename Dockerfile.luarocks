@@ -1,4 +1,4 @@
-FROM tei1988/lua:5.2.4-alpine3.8 AS luarocks
+FROM tei1988/lua:5.2.4-alpine3.9 AS luarocks
 
 ARG LUAROCKS_VERSION=3.0.4
 ARG FILE_NAME=luarocks-${LUAROCKS_VERSION}.tar.gz
